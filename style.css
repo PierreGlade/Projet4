@@ -202,8 +202,11 @@ border-radius: 50%;
 }
 .fa-heart {
   position: absolute;
-  width: 21px;
-  height: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
   font-size: 100%;
   right: 30px;
   transition: transform 2s, background-color 2s;
@@ -211,10 +214,11 @@ border-radius: 50%;
 .fa-heart:hover {
   background-color: #9356DC;
 }
-.fa-heart::before {
-
+.fa-regular.fa-heart::before{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 /*Footer*/
 footer {
   background-color: #353535;
