@@ -1,5 +1,17 @@
 body{
   margin: 0px;
+  animation: 3s;
+}
+
+@keyframe body{
+  0% {
+    background-color:white;
+    opacity:0;
+  }
+  100% {
+    background-color:white;
+    opacity:1;
+  }
 }
 h1 {
   /*change font family -> body*/
@@ -45,9 +57,20 @@ img{
   justify-content: center;
   position: fixed;
   width: 100%;
-  height: 100%;  
+  height: 100%; 
 }
 
+@keyframes lds-ring2 {
+  0% {
+    background-color: white;
+  }
+  90% {
+    background-color: white;
+  }
+  100% {
+    background-color: white;
+  }
+}
 .lds-ring div {
   box-sizing: border-box;
   display: block;
@@ -57,9 +80,9 @@ img{
   margin: 8px;
   border: 8px solid #fff;
   border-radius: 50%;
-  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) 1;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) 3;
   border-color: purple transparent transparent transparent;
-  opacity: 1;
+  opacity: 0;
   
 }
 
@@ -75,9 +98,11 @@ img{
 @keyframes lds-ring {
   0% {
     transform: rotate(0deg);
+    opacity: 1;
   }
   100% {
     transform: rotate(360deg);
+    opacity: 0;
   }
 }
 
@@ -209,15 +234,23 @@ border-radius: 50%;
   height: 30px;
   font-size: 100%;
   right: 30px;
-  transition: transform 2s, background-color 2s;
+  transition: transform 2s, background-color 2s, color 2s;
 }
 .fa-heart:hover {
-  background-color: #9356DC;
+  background-color: white;
+  color: #9356DC;  
 }
+
 .fa-regular.fa-heart::before{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.fa-solid{
+  display: none;
+}
+.fa-solid:hover{
+  display: block;
 }
 /*Footer*/
 footer {
