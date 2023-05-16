@@ -301,25 +301,31 @@ text-align: center;
 }
 .menu-card{
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   flex-wrap: wrap;
   background-color: #FFFFFF;
   border-radius: 15px;
-  margin: 13px;
+  margin: 13px;  
+  height: 100px;
   /*padding: 5px 14px 5px 14px;*/
   
 }
-.menu-card:hover .price-check{
+.menu-card:hover .price-check{  
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #008766;
+  align-self:flex-end;
+  background-color: aquamarine;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   color: white;
   padding: 0px;
   margin: 0px;
-  width: 130px;
+  width: 100px;
   height: 100%;  
   transition: transform 1s linear 1s;
+
 }
 .price-check{
   display: none;
