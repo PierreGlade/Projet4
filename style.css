@@ -369,6 +369,7 @@ text-align: center;
   animation-name: price-check;
   animation-duration: 1s;
   transform: scaleX(1);
+  transform-origin: right center;
 }
 .price-check{
   display: none;
