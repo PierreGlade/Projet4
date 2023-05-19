@@ -26,6 +26,14 @@ h4{
   font-weight: 300;
   font-size: 16px;
 }
+a{
+  font-family: "Roboto", sans-serif;
+  list-style-type: none;
+  margin-top: 5px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  color: white;
+}
 p {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -37,7 +45,26 @@ img{
 .section-title {
   margin-top: 0px;
 }
-
+input#email{
+  border: #9356DC solid 2px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+label{
+  font-family: "Roboto", sans-serif;
+}
+label p{
+  text-align: center;
+}
+textarea#story{
+  border: #9356DC solid 2px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*Loader*/
 
 .lds-ring {
@@ -225,7 +252,22 @@ width: 20px;
   text-align: center;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
+.full{
+  background: linear-gradient(-90deg, #9356dc -11.44%, #ff79da 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 
+}
+.empty{
+  z-index: 1;
+  /*background-color: white;*/
+
+}
+.empty:hover{
+  opacity: 0;
+  transition: 700ms;
+}
 .fa-regular.fa-heart {
   position: absolute;
   display: flex;
@@ -233,11 +275,8 @@ width: 20px;
   align-items: center;
   font-size: 200%;   
   right: 30px; 
-  transition: opacity 0.5s linear;
 }
-.fa-regular:hover{
-  opacity: 0;
-}
+
 .fa-solid.fa-heart {
   position: absolute;
   display: flex;
@@ -250,11 +289,7 @@ width: 20px;
   transition: opacity 0.5s linear;
 }
 
-.fa-solid:hover{ 
-  background-color: white;
-  font: bold;
-  opacity: 1;
-}
+
 
 
 
@@ -286,8 +321,11 @@ text-align: center;
 }
 .display {
   margin: 0;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
   text-align: left;
+  height: 50px;
 }
 .meals{
   position: relative;
@@ -308,6 +346,10 @@ text-align: center;
   border-radius: 15px;
   margin: 13px;  
   height: 100px;
+}
+.meal-content{
+  white-space: nowrap;
+  overflow: hidden;
 }
 /**/
 .appear1{
@@ -353,6 +395,7 @@ text-align: center;
     transform: scale(1);
   }
 }
+
 .menu-card:hover .price-check{  
   display: flex;
   justify-content: center;
@@ -367,12 +410,14 @@ text-align: center;
   width: 100px;
   height: 100%;
   animation-name: price-check;
-  animation-duration: 1s;
-  transform: scaleX(1);
+  animation-duration: 1.5s;
+  /*transform: scaleX(1);*/
   transform-origin: right center;
+
 }
 .price-check{
   display: none;
+  
 }
 .fa-solid.fa-check{
   display: none;
@@ -387,12 +432,12 @@ text-align: center;
 }
 @keyframes price-check{
   0% {
-    transform: scale(0);
-    /*transform-origin: 100%;*/
+    /*transform: scale(0);*/
+    transform: translateX(0px);
   }
   100% {
-    transform: scale(1);
-    /*transform-origin: 0%;*/
+    /*transform: scale(1);*/
+    transform: translateX(30px);
   }
 }
 
@@ -401,19 +446,43 @@ text-align: center;
   font-weight: 500px;
   font-size: 18px;
   text-overflow: "ellipsis";
+  overflow: ;
 }
 .menu-card p{
-  font-weight: 300px;
+  display: flex;
   font-size: 15px;
-  text-overflow: "ellipsis";
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0px;
 }
-span{
-  position: absolute;
-  right: 30px;
+.price{
+display: flex;
+justify-content: center;
+margin-top: 51px;
+font-weight: bold;
 }
 .order{
   display: block;
   margin: auto;
   margin-top: 60px;
 }
-
+.order:hover{
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0.65; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.75);
+  border-radius: 25px; 
+}
+.order:not(:hover){
+  transition: opacity 0.5s ease-in-out;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    
+  }
+}
+@media only screen and (min-width: 600px) {
+  body {
+    width: ;
+  }
+}
