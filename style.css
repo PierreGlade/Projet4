@@ -476,13 +476,45 @@ font-weight: bold;
 .order:not(:hover){
   transition: opacity 0.5s ease-in-out;
 }
-@media only screen and (max-width: 600px) {
-  body {
-    
+@media screen and (min-width: 600px) {
+  section.functioning{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  article.function{
+    width: 30%;
+  }
+
+  section.restaurants{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  img{
+    width: 50%;
+    height: 50%;
+  }
+  article.card{
+    width: 40%;
+    height: 49%;
+  }
+  .new{
+    position: absolute;
+    left: 200px;
+  }
+  .empty{
+    position: absolute;
+    left: -150px;
+
+  }
+  .full{
+    position: absolute;
+    left: -150px;
+
   }
 }
-@media only screen and (min-width: 600px) {
+/*@media only screen and (min-width: 600px) {
   body {
     width: ;
   }
-}
+}*/
