@@ -535,12 +535,19 @@ font-weight: bold;
 }
 footer{
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
+  flex-direction: row-reverse;
 }
 ul{
   display: flex;
   flex-direction: row;
   justify-content: space-between; 
 }
-
+li{
+  margin-right: 40px;
+}
+footer h3{
+  margin: 40px;
+  margin-top: 0px;
+}
 
