@@ -310,7 +310,9 @@ i.fas.fa-heart.full, i.far.fa-heart.empty{
   width: 60px;
   height: 32px;
 }
-
+.menu-coeur{
+  background-color: #353535;
+}
 
 /*Footer*/
 
@@ -340,11 +342,8 @@ text-align: center;
   top: 32px;
 }
 .display {
-  margin: 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  text-align: left;
   height: 50px;
 }
 .meals{
@@ -537,7 +536,7 @@ font-weight: bold;
   }
   .new{
     position: absolute;
-    left: 200px;
+    left: 400px;
 
   }
   .empty{
@@ -585,6 +584,7 @@ section.meals{
 }
 .display{
   justify-content: center;
+
 }
 h4{
   margin-left: 86px;
