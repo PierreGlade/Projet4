@@ -267,6 +267,7 @@ width: 20px;
 i.fas.fa-heart.full, i.far.fa-heart.empty{
     font-size: 30px;
     position: absolute;
+    left: 0px;
 }
 
 .empty:hover{
@@ -309,6 +310,7 @@ i.fas.fa-heart.full, i.far.fa-heart.empty{
   justify-content: center;
   width: 60px;
   height: 32px;
+  position: relative;
 }
 .menu-coeur{
   background-color: #353535;
@@ -536,7 +538,8 @@ font-weight: bold;
   }
   .new{
     position: absolute;
-    left: 400px;
+    /*left: 400px;*/
+    right: 20px;
 
   }
   .empty{
