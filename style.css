@@ -75,6 +75,7 @@ textarea#story{
   width: 100%;
   height: 100%; 
   animation: lds-ring2 1.2s linear 2;
+  z-index: 1;
 }
 
 @keyframes lds-ring2 {
@@ -237,6 +238,7 @@ width: 20px;
   height: 70%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  object-fit: cover;
 }
 .new{
   position: absolute;
