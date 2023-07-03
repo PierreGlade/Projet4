@@ -269,6 +269,7 @@ width: 20px;
 .empty{
   z-index: 1;
   background-color: white;
+  transition: 1s;
 } 
 
 i.fas.fa-heart.full, i.far.fa-heart.empty{
@@ -281,10 +282,12 @@ i.fas.fa-heart.full, i.far.fa-heart.empty{
   opacity: 0;
   transition: 700ms;
 }
+
 .full:hover{
   opacity: 1;
   transition: 700ms;
 }
+
 .fa-regular.fa-heart {
   position: absolute;
   display: flex;
@@ -318,6 +321,7 @@ i.fas.fa-heart.full, i.far.fa-heart.empty{
   width: 60px;
   height: 32px;
   position: relative;
+  left: 20px;
 }
 .menu-coeur{
   background-color: #353535;
