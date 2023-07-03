@@ -1,7 +1,11 @@
 body{
   margin: 0px;
 }
-
+/*
+* {
+  outline: 1px solid red;
+}
+*/
 h1 {
   /*change font family -> body*/
   font-family: "Shrikhand", cursive;
@@ -201,7 +205,7 @@ button {
   background-color: #F6F6F6;
   padding: 5px;
   margin: 15px;
-  height: 50px;
+  height: 70px;
 }
 
 .function-n{
@@ -318,10 +322,10 @@ i.fas.fa-heart.full, i.far.fa-heart.empty{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
+  width: 32px;
   height: 32px;
   position: relative;
-  left: 20px;
+  left: -20px;
 }
 .menu-coeur{
   background-color: #353535;
@@ -529,6 +533,7 @@ font-weight: bold;
 @media screen and (min-width: 600px) {
   .introduction h2{
     justify-content: center;
+    width: auto;
   }
   section.functioning{
     display: flex;
@@ -543,12 +548,14 @@ font-weight: bold;
   flex-wrap: wrap;
   margin-left: 52px;
 }
+
   article.function{
     padding: 0px;
     width: 30%;
   }
   .function-n{
     position: relative;
+    left: -15px;
   }
   section.restaurants{
     display: flex;
@@ -614,9 +621,16 @@ section.meals{
 }
 .display{
   justify-content: center;
-
 }
 h4{
   margin-left: 86px;
 }
+.coeur-menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  left: 20px;
 }
