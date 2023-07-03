@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0px;
 }
 /*
@@ -15,22 +15,22 @@ h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
-h3{
+h3 {
   font-family: "Shrikhand", cursive;
   font-size: 18px;
   font-weight: 400;
   padding-left: 40px;
   padding-top: 18px;
 }
-h4{
+h4 {
   font-family: "Roboto", sans-serif;
-  border-bottom: solid #99E2D0 3px;
+  border-bottom: solid #99e2d0 3px;
   width: 40px;
   margin: 14px;
   font-weight: 300;
   font-size: 16px;
 }
-a{
+a {
   font-family: "Roboto", sans-serif;
   list-style-type: none;
   margin-top: 5px;
@@ -44,27 +44,27 @@ p {
   font-weight: 300;
   text-overflow: ellipsis;
 }
-img{
+img {
   width: 100%;
 }
 .section-title {
   margin-top: 0px;
 }
-input#email{
-  border: #9356DC solid 2px;
+input#email {
+  border: #9356dc solid 2px;
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
 }
-label{
+label {
   font-family: "Roboto", sans-serif;
 }
-label p{
+label p {
   text-align: center;
 }
-textarea#story{
-  border: #9356DC solid 2px;
+textarea#story {
+  border: #9356dc solid 2px;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -78,7 +78,7 @@ textarea#story{
   justify-content: center;
   position: fixed;
   width: 100%;
-  height: 100%; 
+  height: 100%;
   animation: lds-ring2 1.2s linear 2;
   z-index: 1;
 }
@@ -128,8 +128,6 @@ textarea#story{
   }
 }
 
-
-
 /*Header*/
 header {
   height: 112px;
@@ -144,9 +142,9 @@ header {
   gap: 17px;
   background-color: #eaeaea;
 }
-input{
+input {
   border: none;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 16px;
@@ -161,7 +159,7 @@ input{
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -176,25 +174,24 @@ button {
   opacity: 1;
   z-index: 2;
 }
-.button:hover{
+.button:hover {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   transition: all;
   z-index: 1;
 }
-.transition:hover{
+.transition:hover {
   transition: opacity 0.6s ease-in-out;
-  opacity: 0.65; 
+  opacity: 0.65;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.75);
-  border-radius: 25px; 
+  border-radius: 25px;
   z-index: 1;
 }
-.transition:not(:hover){
-  transition: opacity 0.6s ease-in-out ;
+.transition:not(:hover) {
+  transition: opacity 0.6s ease-in-out;
 }
 
-
 /*Function Section*/
-.functioning{
+.functioning {
   padding: 15px;
 }
 .function {
@@ -202,43 +199,57 @@ button {
   align-items: center;
   font-family: "Roboto", sans-serif;
   border-radius: 15px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding: 5px;
   margin: 15px;
   height: 70px;
 }
 
-.function-n{
-position: absolute;
-display: flex;
-justify-content: center;
-align-items: center;
-left:20px;
-margin: 0px;
-padding: 5px;
-background-color: #9356DC;
-color: white;
-border-radius: 50%;
-width: 20px;
+.function-n {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 20px;
+  margin: 0px;
+  padding: 5px;
+  background-color: #9356dc;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
 }
-.function i{
+.function i {
   position: sticky;
-  color: #7E7E7E;
+  color: #7e7e7e;
   margin-left: 40px;
   margin-right: 20px;
 }
 
 /*Restaurants Section*/
+.text p{
+  margin: 0;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.restau h2 {
+  margin: 0;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
 .restaurants {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding-bottom: 30px;
   padding-top: 30px;
+  display: flex;
+  flex-direction: column;
 }
 .card {
   position: relative;
   align-items: center;
   margin: 10px;
-  height: 400px;
+  height: 300px;
   border-radius: 15px;
   background-color: white;
 }
@@ -249,13 +260,13 @@ width: 20px;
   border-top-right-radius: 15px;
   object-fit: cover;
 }
-.new{
+.new {
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #008766;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   border-radius: 2px;
   right: 30px;
   width: 80px;
@@ -263,31 +274,31 @@ width: 20px;
   text-align: center;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
-.full{
+.full {
   background: linear-gradient(-90deg, #9356dc -11.44%, #ff79da 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-
 }
-.empty{
+.empty {
   z-index: 1;
   background-color: white;
   transition: 1s;
-} 
-
-i.fas.fa-heart.full, i.far.fa-heart.empty{
-    font-size: 30px;
-    position: absolute;
-    left: 0px;
 }
 
-.empty:hover{
+i.fas.fa-heart.full,
+i.far.fa-heart.empty {
+  font-size: 30px;
+  position: absolute;
+  left: 0px;
+}
+
+.empty:hover {
   opacity: 0;
   transition: 700ms;
 }
 
-.full:hover{
+.full:hover {
   opacity: 1;
   transition: 700ms;
 }
@@ -297,8 +308,8 @@ i.fas.fa-heart.full, i.far.fa-heart.empty{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 200%;   
-  right: 30px; 
+  font-size: 200%;
+  right: 30px;
 }
 
 .fa-solid.fa-heart {
@@ -306,19 +317,27 @@ i.fas.fa-heart.full, i.far.fa-heart.empty{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 200%;   
+  font-size: 200%;
   right: 30px;
   opacity: 0;
-  color: #9356DC;
+  color: #9356dc;
   transition: opacity 0.5s linear;
 }
-
-.text{
+.coeur-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  left: 20px;
+}
+.text {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.coeur{
+.coeur {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -327,7 +346,7 @@ i.fas.fa-heart.full, i.far.fa-heart.empty{
   position: relative;
   left: -20px;
 }
-.menu-coeur{
+.menu-coeur {
   background-color: #353535;
 }
 
@@ -336,7 +355,6 @@ i.fas.fa-heart.full, i.far.fa-heart.empty{
 footer {
   background-color: #353535;
   color: white;
-
 }
 h3 {
   margin-top: 0px;
@@ -348,11 +366,11 @@ li {
   padding-bottom: 15px;
 }
 /*Menus*/
-.menu-header{
-height: 46.4px;
-text-align: center;
+.menu-header {
+  height: 46.4px;
+  text-align: center;
 }
-.fa-arrow-left{
+.fa-arrow-left {
   color: #353535;
   position: absolute;
   left: 30px;
@@ -363,40 +381,44 @@ text-align: center;
   align-items: center;
   height: 50px;
 }
-.meals{
+.meals {
   position: relative;
   top: -40px;
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: #F6F6F6;
-  
+  background-color: #f6f6f6;
 }
-.menu-card{
+.menu-card {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 15px;
-  margin: 13px;  
-  height: 100px;
+  margin: 13px;
+  height: 80px;
 }
-.meal-content{
+.menu-card h2 {
+  font-weight: bold;
+}
+.meal-content {
   white-space: nowrap;
   overflow: hidden;
+  margin-left: 15px;
 }
-.meal-content p{
+
+.meal-content p {
   text-overflow: ellipsis;
 }
 /**/
-.appear1{
+.appear1 {
   animation-name: appear1;
   animation-duration: 1.5s;
-  transform:  linear; 
+  transform: linear;
 }
-@keyframes appear1{
+@keyframes appear1 {
   0% {
     transform: scale(0);
   }
@@ -405,13 +427,13 @@ text-align: center;
   }
 }
 /**/
-.appear2{
+.appear2 {
   animation-delay: 2.5s;
   animation-name: appear2;
   animation-duration: 1.5s;
-  transform: opacity(1) linear; 
+  transform: opacity(1) linear;
 }
-@keyframes appear2{
+@keyframes appear2 {
   0% {
     transform: scale(0);
   }
@@ -420,13 +442,13 @@ text-align: center;
   }
 }
 /**/
-.appear3{
+.appear3 {
   animation-delay: 4.5s;
   animation-name: appear3;
   animation-duration: 1.5s;
-  transform: opacity(1) linear; 
+  transform: opacity(1) linear;
 }
-@keyframes appear3{
+@keyframes appear3 {
   0% {
     transform: scale(0);
   }
@@ -435,11 +457,11 @@ text-align: center;
   }
 }
 
-.menu-card:hover .price-check{  
+.menu-card:hover .price-check {
   display: flex;
   justify-content: center;
   align-items: center;
-  align-self:flex-end;
+  align-self: flex-end;
   background-color: aquamarine;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -453,18 +475,16 @@ text-align: center;
   /*transform-origin: right ;*/
 }
 
-.price-check{
+.price-check {
   display: none;
   animation: 1s;
 }
 
-@keyframes price-check{
+@keyframes price-check {
   0% {
-    
     transform: translateX(100%);
   }
   100% {
-    
     transform: translateX(0ù);
   }
 }
@@ -480,7 +500,7 @@ text-align: center;
   }
 }*/
 
-.fa-solid.fa-check{
+.fa-solid.fa-check {
   display: none;
   display: flex;
   align-items: center;
@@ -492,14 +512,11 @@ text-align: center;
   color: aquamarine;
 }
 
-
-
-.menu-card h2{
-  font-weight: 500;
+.menu-card h2 {
   font-size: 18px;
   text-overflow: "ellipsis";
 }
-.menu-card p{
+.menu-card p {
   display: flex;
   font-size: 15px;
   text-overflow: ellipsis;
@@ -507,130 +524,137 @@ text-align: center;
   overflow: hidden;
   padding: 0px;
 }
-.price{
-display: flex;
-justify-content: center;
-margin-top: 51px;
-font-weight: bold;
+.price {
+  display: flex;
+  justify-content: end;
+  margin-top: 51px;
+  font-weight: bold;
 }
-.order{
+.order {
   display: block;
   margin: auto;
   margin-top: 60px;
 }
-.order:hover{
+.order:hover {
   transition: opacity 0.5s ease-in-out;
-  opacity: 0.65; 
+  opacity: 0.65;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.75);
-  border-radius: 25px; 
+  border-radius: 25px;
 }
-.order:not(:hover){
+.order:not(:hover) {
   transition: opacity 0.5s ease-in-out;
 }
 
 /*Index responsive*/
 
 @media screen and (min-width: 600px) {
-  .introduction h2{
+  .introduction h2 {
     justify-content: center;
     width: auto;
   }
-  section.functioning{
+
+  section.functioning {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding-left: 0px;
-    
   }
-.section-title{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 52px;
-}
+  .section-title {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 52px;
+  }
 
-  article.function{
+  article.function {
     padding: 0px;
     width: 30%;
   }
-  .function-n{
+  .function-n {
     position: relative;
     left: -15px;
   }
-  section.restaurants{
+  section.restaurants {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
   }
-  img{
+  img {
     width: 50%;
     height: 50%;
   }
-  article.card{
+  article.card {
     width: 40%;
   }
-  .new{
+  .new {
     position: absolute;
     /*left: 400px;*/
     right: 20px;
-
   }
-  .empty{
+  .empty {
     position: absolute;
     left: -150px;
   }
-  .full{
+  .full {
     position: absolute;
     left: -150px;
   }
-  .fa-regular.fa-heart::before{
-  width: 32px;
+  .fa-regular.fa-heart::before {
+    width: 32px;
   }
 
-footer{
-  display: flex;
-  flex-direction: row-reverse;
-}
-ul{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; 
-}
-li{
-  margin-right: 40px;
-}
-footer h3{
-  margin: 40px;
-  margin-top: 0px;
-}
-/*Menu responsive*/
-.header-img{
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
-article.menu-card{
-  width: 80%;
-  margin: auto;
-  margin-bottom: 20px;
-}
-section.meals{
-  width: 80%;
-  margin: auto;
-}
-.display{
-  justify-content: center;
-}
-h4{
-  margin-left: 86px;
-}
-.coeur-menu{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  position: relative;
-  left: 20px;
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  li {
+    margin-right: 40px;
+  }
+  footer h3 {
+    margin: 40px;
+    margin-top: 0px;
+  }
+  /*Menu responsive*/
+  .header-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  article.menu-card {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  section.meals {
+    width: 80%;
+    margin: auto;
+  }
+  .display {
+    justify-content: center;
+  }
+  .menu-card h2 {
+    font-weight: bold;
+  }
+  h4 {
+    margin-left: 86px;
+  }
+  .coeur-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    left: 20px;
+  }
+  p .price {
+    left: 40px;
+    position: relative;
+  }
 }
