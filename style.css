@@ -380,6 +380,10 @@ li {
   display: flex;
   align-items: center;
   height: 50px;
+  justify-content: space-around;
+}
+.display h1 {
+  margin-left: 10px;
 }
 .meals {
   position: relative;
