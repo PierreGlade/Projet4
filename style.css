@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  
 }
 /*
 * {
@@ -92,6 +93,7 @@ textarea#story {
   }
   100% {
     background-color: white;
+    display: none;
   }
 }
 .lds-ring div {
@@ -121,10 +123,12 @@ textarea#story {
   0% {
     transform: rotate(0deg);
     opacity: 1;
+    z-index: 1;
   }
   100% {
     transform: rotate(360deg);
     opacity: 0;
+    z-index: 0.5;
   }
 }
 
@@ -226,7 +230,7 @@ button {
 }
 
 /*Restaurants Section*/
-.text p{
+.text p {
   margin: 0;
   padding-left: 10px;
   padding-top: 5px;
@@ -332,6 +336,9 @@ i.far.fa-heart.empty {
   position: relative;
   left: 20px;
 }
+.display .empty{
+  background-color: #f6f6f6;
+}
 .text {
   display: flex;
   justify-content: space-between;
@@ -414,13 +421,13 @@ li {
 }
 
 .meal-content p {
+  
   text-overflow: ellipsis;
 }
 /**/
 .appear1 {
   animation-name: appear1;
   animation-duration: 1.5s;
-  transform: linear;
 }
 @keyframes appear1 {
   0% {
@@ -435,7 +442,6 @@ li {
   animation-delay: 2.5s;
   animation-name: appear2;
   animation-duration: 1.5s;
-  transform: opacity(1) linear;
 }
 @keyframes appear2 {
   0% {
@@ -450,7 +456,6 @@ li {
   animation-delay: 4.5s;
   animation-name: appear3;
   animation-duration: 1.5s;
-  transform: opacity(1) linear;
 }
 @keyframes appear3 {
   0% {
@@ -475,7 +480,7 @@ li {
   width: 100px;
   height: 100%;
   animation-name: price-check;
-  animation-duration: 2s;
+  animation-duration: 1;
   /*transform-origin: right ;*/
 }
 
@@ -489,7 +494,7 @@ li {
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(0ù);
+    transform: translateX(0);
   }
 }
 
@@ -518,7 +523,8 @@ li {
 
 .menu-card h2 {
   font-size: 18px;
-  text-overflow: "ellipsis";
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-card p {
   display: flex;
@@ -527,6 +533,7 @@ li {
   white-space: nowrap;
   overflow: hidden;
   padding: 0px;
+  
 }
 .price {
   display: flex;
