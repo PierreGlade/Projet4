@@ -445,14 +445,37 @@ text-align: center;
   width: 100px;
   height: 100%;
   animation-name: price-check;
-  animation-duration: 1.5s;
-  transform-origin: right center;
+  animation-duration: 2s;
+  /*transform-origin: right ;*/
 }
 
 .price-check{
   display: none;
-  
+  animation: 1s;
 }
+
+@keyframes price-check{
+  0% {
+    
+    transform: translateX(100%);
+  }
+  100% {
+    
+    transform: translateX(0ù);
+  }
+}
+
+/*@keyframes price-check{
+  0% {
+  
+    transform: translateX(0px);
+  }
+  100% {
+    
+    transform: translateX(40px);
+  }
+}*/
+
 .fa-solid.fa-check{
   display: none;
   display: flex;
@@ -464,14 +487,7 @@ text-align: center;
   background-color: white;
   color: aquamarine;
 }
-@keyframes price-check{
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(30px);
-  }
-}
+
 
 
 .menu-card h2{
