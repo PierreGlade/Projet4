@@ -1,14 +1,13 @@
 body {
   margin: 0px;
-  
 }
+
 /*
 * {
   outline: 1px solid red;
 }
 */
 h1 {
-  /*change font family -> body*/
   font-family: "Shrikhand", cursive;
   text-align: center;
 }
@@ -97,6 +96,10 @@ textarea#story {
   }
 }
 .lds-ring div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
   box-sizing: border-box;
   display: block;
   position: absolute;
@@ -107,7 +110,22 @@ textarea#story {
   border-radius: 50%;
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) 3;
   border-color: purple transparent transparent transparent;
-  opacity: 0;
+  opacity: 0.2;
+  z-index: 3;
+}
+
+#hideMeAfter3Seconds {
+  animation: hideAnimation 0s ease-in 3s;
+  animation-fill-mode: forwards;
+  background-color: white;
+}
+
+@keyframes hideAnimation {
+  to {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
 }
 
 .lds-ring div:nth-child(1) {
@@ -123,19 +141,22 @@ textarea#story {
   0% {
     transform: rotate(0deg);
     opacity: 1;
-    z-index: 1;
+    overflow: hidden;
   }
   100% {
     transform: rotate(360deg);
     opacity: 0;
-    z-index: 0.5;
+    visibility: collapse;
+    display: none 3s;
   }
 }
 
 /*Header*/
 header {
   height: 112px;
+  
 }
+
 .location {
   display: flex;
   flex-direction: row;
@@ -336,7 +357,7 @@ i.far.fa-heart.empty {
   position: relative;
   left: 20px;
 }
-.display .empty{
+.display .empty {
   background-color: #f6f6f6;
 }
 .text {
@@ -421,7 +442,6 @@ li {
 }
 
 .meal-content p {
-  
   text-overflow: ellipsis;
 }
 /**/
@@ -533,7 +553,6 @@ li {
   white-space: nowrap;
   overflow: hidden;
   padding: 0px;
-  
 }
 .price {
   display: flex;
