@@ -153,7 +153,6 @@ textarea#story {
 /*Header*/
 header {
   height: 112px;
-  
 }
 
 .location {
@@ -198,26 +197,20 @@ button {
   opacity: 1;
   z-index: 2;
 }
-.button:hover {
+
+button:hover {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.75);
-  transition: all;
-  z-index: 1;
-}
-.button:not(:hover){
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  transform: all;
   transition: ease-in-out 0.7s;
-}
-.transition:hover {
-  transition: opacity 0.7s ease-in-out;
   opacity: 0.6;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.75);
-  border-radius: 25px;
   z-index: 1;
 }
 
-.transition:not(:hover) {
-  transition: opacity 0.7s ease-in-out;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0);
+button:not(:hover) {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  transition: ease-in-out 0.7s;
+  transform: all;
+  opacity: 1;
 }
 
 /*Function Section*/
@@ -254,7 +247,7 @@ button {
   margin-left: 40px;
   margin-right: 20px;
 }
-.function i:hover{
+.function i:hover {
   color: #9356dc;
 }
 
@@ -282,7 +275,7 @@ button {
   position: relative;
   align-items: center;
   margin: 10px;
-  height: 300px;
+  height: 260px;
   border-radius: 15px;
   background-color: white;
 }
@@ -510,7 +503,6 @@ li {
   height: 100%;
   animation-name: price-check;
   animation-duration: 1s;
-  /*transform-origin: right ;*/
 }
 
 .price-check {
@@ -526,17 +518,6 @@ li {
     transform: translateX(0);
   }
 }
-
-/*@keyframes price-check{
-  0% {
-  
-    transform: translateX(0px);
-  }
-  100% {
-    
-    transform: translateX(40px);
-  }
-}*/
 
 .fa-solid.fa-check {
   display: none;
