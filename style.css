@@ -488,7 +488,7 @@ li {
     transform: scale(1);
   }
 }
-.menu-card:hover .meal-content{
+.menu-card:hover .meal-content {
   width: 150px;
 }
 
@@ -522,7 +522,6 @@ li {
     transform: translateX(0);
   }
 }
-
 
 .fa-solid.fa-check {
   display: none;
