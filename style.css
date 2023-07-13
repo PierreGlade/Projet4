@@ -426,8 +426,6 @@ li {
 .menu-card {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
-  flex-wrap: wrap;
   background-color: #ffffff;
   overflow: hidden;
   border-radius: 15px;
@@ -489,7 +487,7 @@ li {
   }
 }
 .menu-card:hover .meal-content {
-  width: 150px;
+  width: 70%;
 }
 
 .menu-card:hover .price-check {
@@ -505,23 +503,31 @@ li {
   margin: 0px;
   width: 100px;
   height: 100%;
-  animation-name: price-check-in;
-  animation-duration: 1s;
 }
 
+.mcp{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 .price-check {
-  display: none;
-  animation-duration: 1s;
+  width: 0px;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  background-color: #99e2d0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: white;
+  height: 100%;
+  animation-name: price-check-in;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  transition: width 1s;
 }
 
-@keyframes price-check-in {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
 
 .fa-solid.fa-check {
   display: none;
