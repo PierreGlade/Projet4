@@ -211,7 +211,12 @@ button:not(:hover) {
   transition: ease-in-out 0.7s;
   opacity: 1;
 }
-
+.transition {
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*Function Section*/
 .functioning {
   padding: 15px;
@@ -505,7 +510,7 @@ li {
   height: 100%;
 }
 
-.mcp{
+.mcp {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -527,7 +532,6 @@ li {
   animation-fill-mode: forwards;
   transition: width 1s;
 }
-
 
 .fa-solid.fa-check {
   display: none;
