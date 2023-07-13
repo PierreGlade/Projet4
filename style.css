@@ -382,7 +382,11 @@ i.far.fa-heart.empty {
 .menu-coeur {
   background-color: #353535;
 }
-
+.front {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*Footer*/
 
 footer {
@@ -413,6 +417,7 @@ li {
   display: flex;
   align-items: center;
   height: 50px;
+  width: 60%;
   justify-content: space-around;
 }
 .display h1 {
